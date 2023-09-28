@@ -1,5 +1,9 @@
 # XGBlogS
-quick and dirty LogS approximation with xgboost+rdkit. Aqueous solubility is usually expressed as LogS, the logarithm of aqueous solubility expressed in mol/l. Correctly estimating this value is not that easy, but a regression model on known molecules can give a somewhat decent first guess. The approach here uses XGB regressor with ECFP count fingerprints. Putting this up here for those in a hurry who dont have time to drop this data in a regressor themselves.
+quick and dirty LogS approximation with xgboost+rdkit.
+
+Aqueous solubility is usually expressed as LogS, the logarithm of aqueous solubility expressed in mol/l. Correctly estimating this value is not that easy, but a regression model on known molecules can give a somewhat decent first guess. The approach here uses XGB regressor with molecule features represented by ECFP count fingerprints.
+
+Putting this up here for those in a hurry who dont have time to drop this data in a regressor themselves. I did a grid search and provide a decently optimized model as is.
 
 
 This is based on the data from "Estimation of Aqueous Solubility of Chemical Compounds Using E-State Indices" by Tetko and co-workers [Link]https://pubs.acs.org/doi/full/10.1021/ci000392t
@@ -16,6 +20,7 @@ Obtain the input data using
 ```wget https://vcclab.org/lab/alogps/logs.txt```
 
 (make sure to check the download conditions)
+
 to retrain just run
 
 ```python train.py```
