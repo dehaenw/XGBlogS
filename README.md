@@ -18,7 +18,7 @@ Obtain the input data using
 (make sure to check the download conditions)
 to retrain just run
 
-```python XGBlogS.py```
+```python train.py```
 
 ## use the model
 import function mols2logS and put an array of mols in there
