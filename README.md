@@ -41,6 +41,6 @@ mols = [Chem.MolFromSmiles(smi) for smi in ["C(CCCC)CC(C)CC","OCCc1ccccc1"]]
 print(mols2logS(mols))
 ```
 
-outputs `[-3.7690332 -1.5200678]`
+outputs `[-3.8742268 -1.128178 ]`
 
 and that's all. enjoy!
