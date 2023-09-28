@@ -14,6 +14,9 @@ Numbers of this model: `r2 0.86, RMSE: 0.77`
 
 So a bit worse, but still usable.
 
+## requirements
+sklearn pandas rdkit and xgboost
+
 ## retrain the model
 Obtain the input data using
 
