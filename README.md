@@ -12,7 +12,7 @@ Their numbers: `r2 0.91, RMSE 0.62`
 
 Numbers of this model: `r2 0.93, RMSE: 0.57` (using the provided splits)
 
-So this regressor is performs about the same as the published method. A previous version of this model used ECFP fingerprints which has r2 of about 0.86
+So this regressor's performance is about the same as the published method. A previous version of this model used ECFP fingerprints which has r2 of about 0.86
 
 ## requirements
 sklearn pandas rdkit>2023.03 (needed for Descriptors.CalcMolDescriptors()) and xgboost
